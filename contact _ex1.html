@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact.html</title>
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<body>
+    
+    <Header>
+    
+        <img src="assets/src/img/jarditou_logo.jpg"
+        alt="logo_jarditou" title="logo_jarditou"
+        width="500" height="100"
+        class="logo_jarditou">
+
+        <p class="texte_logo">La qualité depuis 70 ans</p>
+
+    </Header>
+
+    <nav>
+
+        <div class="ul">
+
+            <a href="index.html" class="lien_margin bouton_accueil">Acceuil</a>
+            
+            <a href="tableau.html" class="bouton_tableau">Tableau</a>
+            
+            <a href="contact.html" class="bouton_contact">Formulaire</a>
+            
+        </div>
+        
+
+    </nav>
+
+        <!-- Pas la moindre idée d'où mettre la bannière -->
+        <p>
+
+            <img src="assets/src/img/promotion.jpg"
+            alt="banniere_promo" title="banniere_promo"
+            width="100%"
+            class="banniere_promo">
+
+        </p>
+
+    <section>
+
+        <h1>Contact</h1>
+
+        <hr>
+    
+        <form action="http://bienvu.net/script.php" method="post" id="formulaire_complet" class="article_a">
+
+            <p>* Ces zones sont obligatoires</p>
+
+            <fieldset>
+
+                <legend>Vos coordonnées</legend>
+
+                    <label for="nom">Mon nom* : </label><input type="text" name="nom" id="nom" class="name_verif" maxlength="25"><br>
+                    <div id="div_erreur_nom" class="erreur_form"></div>
+                    
+
+                    <label for="prenom">Mon prénom* : </label><input type="text" name="prenom" id="prenom" maxlength="25">
+                    <div id="div_erreur_prenom" class="erreur_form"></div>
+
+                    <br><br>
+
+                    <label for="sexe">Sexe* :</label>
+                        <input type="radio" name="sexe" value="Feminin" id="sexe" checked> Feminin
+                        <input type="radio" name="sexe" value="Masculin"> Masculin
+                        <input type="radio" name="sexe" value="Autre"> Autres
+                        <br>
+                        <div id="div_erreur_radio_sexe" class="erreur_form"></div>
+             
+                    <br><br>
+
+                    <label for="age">Date de naissance* : </label><input type="date" name="ddn" id="age" checked><br>
+                    <div id="div_erreur_date" class="erreur_form"></div>
+
+                    <label for="cpostal">Code postal* : </label><input type="text" name="code_postal" id="code_postal" maxlength="5"><br>
+                    <div id="div_erreur_code_postal" class="erreur_form"></div>
+                    
+                    <label for="adresse">Adresse : </label><input type="text" name="adresse" id="adresse" maxlength="100"><br>
+                    <label for="ville">Ville : </label><input type="text" name="ville" id="ville" maxlength="100"><br>
+                    <label for="mail">E-mail* : </label><input type="text" name="mail" id="mail" maxlength="50" placeholder="dave.loper@afpa.fr">
+                    <div id="div_erreur_mail" class="erreur_form"></div>
+
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Votre demande</legend>
+
+                    <label for="sujet">Sujet* :</label>
+
+                        <select id="sujet">
+                            <option value="null" selected>Veuillez séléctionner un sujet</option>
+                            <option value="commandes">Mes commandes</option>
+                            <option value="produit">Question sur un produit</option>
+                            <option value="reclamation">Réclamation</option>
+                            <option value="autres">Autres</option>
+                        </select>
+                
+                    <br>
+
+                    <label for="question">Votre question* : </label><textarea name="question" cols="40" id="question"></textarea>
+                    <div id="div_erreur_question" class="erreur_form"></div>
+
+                    <br>
+
+            </fieldset>
+
+                <br>    
+                
+                <input type="checkbox" name="accepter" value="accepter" id="bouton_confirmation">* J'accepte le traitement informatique de ce formulaire
+                <div id="div_erreur_confirmation" class="erreur_form"></div>
+
+                <br> <br>
+            
+            <input type="button" value="Envoyer" id="bouton_verif">
+            <input type="button" value="Annuler" id="bouton_annuler"><br>
+
+            <hr>
+
+        </form>
+
+    </section>
+
+
+    <footer>
+
+        <div class="ul">
+            
+            <a href="index.html" class="lien_margin bouton_mention">Mention légales</a>
+        
+            <a href="tableau.html" class="bouton_horaires">Horaires</a>
+        
+            <a href="tableau.html" class="bouton_plan">Plan du site</a>
+
+        </div>
+
+        <script src="assets/js/script_exercice_1.js"></script>
+
+    </footer>
+
+</body>
+
+</html>
